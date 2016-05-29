@@ -11,8 +11,8 @@ module.exports = function(app) {
   });
 
   app.get('/light', function(req, res) {
-    var iD = req.query.iD;
-    var location = req.query.iD;
+    var iD = req.query.id;
+    var location = req.query.location;
     // Do a call {/status} to the device to see the status for the current vars
     if (iD) {
       // Make a get call to the iD
